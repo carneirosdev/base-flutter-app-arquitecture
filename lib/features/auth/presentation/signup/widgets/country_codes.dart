@@ -1,0 +1,85 @@
+class CountryCode {
+  final String name;
+  final String flag;
+  final String dialCode;
+
+  const CountryCode({
+    required this.name,
+    required this.flag,
+    required this.dialCode,
+  });
+}
+
+const List<CountryCode> kCountryCodes = [
+  // Língua portuguesa
+  CountryCode(name: 'Angola', flag: '🇦🇴', dialCode: '+244'),
+  CountryCode(name: 'Brasil', flag: '🇧🇷', dialCode: '+55'),
+  CountryCode(name: 'Portugal', flag: '🇵🇹', dialCode: '+351'),
+  CountryCode(name: 'Cabo Verde', flag: '🇨🇻', dialCode: '+238'),
+  CountryCode(name: 'Moçambique', flag: '🇲🇿', dialCode: '+258'),
+  CountryCode(name: 'São Tomé e Príncipe', flag: '🇸🇹', dialCode: '+239'),
+  CountryCode(name: 'Guiné-Bissau', flag: '🇬🇼', dialCode: '+245'),
+  CountryCode(name: 'Guiné Equatorial', flag: '🇬🇶', dialCode: '+240'),
+  CountryCode(name: 'Timor-Leste', flag: '🇹🇱', dialCode: '+670'),
+  // África
+  CountryCode(name: 'África do Sul', flag: '🇿🇦', dialCode: '+27'),
+  CountryCode(name: 'Argélia', flag: '🇩🇿', dialCode: '+213'),
+  CountryCode(name: 'Botsuana', flag: '🇧🇼', dialCode: '+267'),
+  CountryCode(name: 'Camarões', flag: '🇨🇲', dialCode: '+237'),
+  CountryCode(name: 'Congo (Rep.)', flag: '🇨🇬', dialCode: '+242'),
+  CountryCode(name: 'Congo (Rep. Dem.)', flag: '🇨🇩', dialCode: '+243'),
+  CountryCode(name: 'Costa do Marfim', flag: '🇨🇮', dialCode: '+225'),
+  CountryCode(name: 'Egito', flag: '🇪🇬', dialCode: '+20'),
+  CountryCode(name: 'Etiópia', flag: '🇪🇹', dialCode: '+251'),
+  CountryCode(name: 'Gana', flag: '🇬🇭', dialCode: '+233'),
+  CountryCode(name: 'Lesoto', flag: '🇱🇸', dialCode: '+266'),
+  CountryCode(name: 'Líbia', flag: '🇱🇾', dialCode: '+218'),
+  CountryCode(name: 'Madagascar', flag: '🇲🇬', dialCode: '+261'),
+  CountryCode(name: 'Malawi', flag: '🇲🇼', dialCode: '+265'),
+  CountryCode(name: 'Mali', flag: '🇲🇱', dialCode: '+223'),
+  CountryCode(name: 'Marrocos', flag: '🇲🇦', dialCode: '+212'),
+  CountryCode(name: 'Mauritânia', flag: '🇲🇷', dialCode: '+222'),
+  CountryCode(name: 'Namíbia', flag: '🇳🇦', dialCode: '+264'),
+  CountryCode(name: 'Nigéria', flag: '🇳🇬', dialCode: '+234'),
+  CountryCode(name: 'Quénia', flag: '🇰🇪', dialCode: '+254'),
+  CountryCode(name: 'Rwanda', flag: '🇷🇼', dialCode: '+250'),
+  CountryCode(name: 'Senegal', flag: '🇸🇳', dialCode: '+221'),
+  CountryCode(name: 'Somália', flag: '🇸🇴', dialCode: '+252'),
+  CountryCode(name: 'Sudão', flag: '🇸🇩', dialCode: '+249'),
+  CountryCode(name: 'Tanzânia', flag: '🇹🇿', dialCode: '+255'),
+  CountryCode(name: 'Tunísia', flag: '🇹🇳', dialCode: '+216'),
+  CountryCode(name: 'Uganda', flag: '🇺🇬', dialCode: '+256'),
+  CountryCode(name: 'Zâmbia', flag: '🇿🇲', dialCode: '+260'),
+  CountryCode(name: 'Zimbabué', flag: '🇿🇼', dialCode: '+263'),
+  // Europa
+  CountryCode(name: 'Alemanha', flag: '🇩🇪', dialCode: '+49'),
+  CountryCode(name: 'Espanha', flag: '🇪🇸', dialCode: '+34'),
+  CountryCode(name: 'França', flag: '🇫🇷', dialCode: '+33'),
+  CountryCode(name: 'Itália', flag: '🇮🇹', dialCode: '+39'),
+  CountryCode(name: 'Países Baixos', flag: '🇳🇱', dialCode: '+31'),
+  CountryCode(name: 'Reino Unido', flag: '🇬🇧', dialCode: '+44'),
+  CountryCode(name: 'Rússia', flag: '🇷🇺', dialCode: '+7'),
+  CountryCode(name: 'Suécia', flag: '🇸🇪', dialCode: '+46'),
+  CountryCode(name: 'Suíça', flag: '🇨🇭', dialCode: '+41'),
+  // Américas
+  CountryCode(name: 'Argentina', flag: '🇦🇷', dialCode: '+54'),
+  CountryCode(name: 'Canadá', flag: '🇨🇦', dialCode: '+1'),
+  CountryCode(name: 'Chile', flag: '🇨🇱', dialCode: '+56'),
+  CountryCode(name: 'Colômbia', flag: '🇨🇴', dialCode: '+57'),
+  CountryCode(name: 'Estados Unidos', flag: '🇺🇸', dialCode: '+1'),
+  CountryCode(name: 'México', flag: '🇲🇽', dialCode: '+52'),
+  CountryCode(name: 'Peru', flag: '🇵🇪', dialCode: '+51'),
+  CountryCode(name: 'Venezuela', flag: '🇻🇪', dialCode: '+58'),
+  // Ásia & Oceânia
+  CountryCode(name: 'Arábia Saudita', flag: '🇸🇦', dialCode: '+966'),
+  CountryCode(name: 'Austrália', flag: '🇦🇺', dialCode: '+61'),
+  CountryCode(name: 'China', flag: '🇨🇳', dialCode: '+86'),
+  CountryCode(name: 'Coreia do Sul', flag: '🇰🇷', dialCode: '+82'),
+  CountryCode(name: 'Emirados Árabes', flag: '🇦🇪', dialCode: '+971'),
+  CountryCode(name: 'Filipinas', flag: '🇵🇭', dialCode: '+63'),
+  CountryCode(name: 'Índia', flag: '🇮🇳', dialCode: '+91'),
+  CountryCode(name: 'Indonésia', flag: '🇮🇩', dialCode: '+62'),
+  CountryCode(name: 'Japão', flag: '🇯🇵', dialCode: '+81'),
+  CountryCode(name: 'Paquistão', flag: '🇵🇰', dialCode: '+92'),
+  CountryCode(name: 'Turquia', flag: '🇹🇷', dialCode: '+90'),
+];
